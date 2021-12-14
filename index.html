@@ -9,13 +9,16 @@
   </head>
   <body>
     <header><img src="logo.svg"> <h1>Dziennik Scratcherski</h1></header>
-    Dziennik Scratcherski to internetowa gazeta, która wychodzi bardzo nieregularnie w witrynie Scratch.
+    <div id="about"></div>
     <hr>
     <!--<button id="submitNum" class="bg-ffcd00">Potwierdź</button>-->
     
+    <script src="functions.js"></script>
     <script src="studioView/studioview.js"></script>
     
     <script>
+      document.getElementById("about").innerHTML = get("about.pohtml");
+
         var studioView = new StudioView("27008844",400,100);
         document.body.appendChild(studioView.root);
         studioView.loadNextPage();
