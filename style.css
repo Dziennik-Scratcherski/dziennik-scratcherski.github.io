@@ -33,6 +33,6 @@ button {
 
 .studioview-root {
   width: 50%;
-  height: 10vh;
   margin: auto;
+  user-select: none;
 }
