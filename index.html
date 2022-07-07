@@ -17,13 +17,15 @@
     <script src="studioView/studioview.js"></script>
     
     <script>
-      document.getElementById("about").innerHTML = get("about.html");
+      document.getElementById("about").innerHTML = get("about.txt");
 
         var studioView = new StudioView("27008844",400,100);
         document.body.appendChild(studioView.root);
         studioView.loadNextPage();
 
         document.getElementsByClassName("studioview-root").height = 100;
+
+      console.log(gt("https://api.scratch.mit.edu/studios/27008844").description);
     </script>
     <footer>©Copyright Dziennik Scratcherski 2020-2022</footer>
   </body>

@@ -4,7 +4,7 @@ function get(http) {
         if (this.readyState == 4 && this.status == 200) {
         // Typical action to be performed when the document is ready:
         result = xhttp.responseText;
-        //createToolbox();
+        //
         }
         };
         xhttp.open("GET", http, false);
@@ -14,4 +14,11 @@ function get(http) {
 
 function w(text) {
     console.log(text);
+}
+
+function gt(http) {
+    let fetchPro = fetch(http)
+    .then(response => response.json())
+    .then(data => {return data})
+    return fetchPro;
 }
