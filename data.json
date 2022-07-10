@@ -1,0 +1,9 @@
+{
+  type:'test',
+  contributors:
+  [
+    'piw-piw',
+    'cybernat'
+  ],
+  visible: false
+}
